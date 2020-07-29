@@ -37,5 +37,5 @@ function exerciseDog(dogName, dogBreed) {
   return arrayOfFunctions;
 }
 
-aaa = exerciseDog("s","sd");
-console.log(aaa);
+const executedMessages = exerciseDog("Esther", "Dalmation"); 
+console.log(executedMessages);
