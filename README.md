@@ -2,7 +2,6 @@ var routine = [
   wakeDog,
   leashDog,
   walkToPark,
-  walkToPark,
   throwFrisbee,
   walkHome,
   unleashDog,
@@ -28,13 +27,14 @@ function wakeDog(a, b) {
 }
 
 function exerciseDog(dogName, dogBreed) {
-  var a = dogName,
-    b = dogBreed,
-    arrayOfFunctions = [];
-  routine.forEach(function (e) {
-    arrayOfFunctions.push(e(a, b));
-  });
-  return arrayOfFunctions;
+//   var a = dogName,
+//     b = dogBreed,
+//     arrayOfFunctions = [];
+//   routine.forEach(function (e) {
+//     arrayOfFunctions.push(e(a, b));
+//   });
+//   return arrayOfFunctions;
+return routine.map((fn) => fn(dog, breed));
 }
 
 const executedMessages = exerciseDog("Esther", "Dalmation"); 
