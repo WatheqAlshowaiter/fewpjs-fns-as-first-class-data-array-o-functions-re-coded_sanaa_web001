@@ -28,10 +28,12 @@ function wakeDog(a, b) {
 }
 
 function exerciseDog(dogName, dogBreed) {
-    var a = dogName, b = dogBreed;
+    var a = dogName, b = dogBreed, arrayOfFunctions =[];
     routine.forEach(function (e) {
-    console.log(e(a,b));
+    arrayOfFunctions.push((e(a,b)));
   });
+  return arrayOfFunctions;
 }
 
 aaa = exerciseDog();
+console.log(aaa);
